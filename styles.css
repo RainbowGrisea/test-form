@@ -1,3 +1,56 @@
-h1 {
-    color: darkgreen;
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-panel {
+    background-image: url(./images/background.jpg);
+    background-size: contain;
+    width: 40vw;
+    position: relative;
+
+}
+
+.right-panel {
+    width: 60vw;
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: larger;
+}
+
+footer a {
+    color: white;
+}
+
+.greeting-text-section,
+.form-section,
+.button-section {
+    height: calc(1/3*100vh);
+}
+
+.left-panel h1 {
+    margin-top: 25vh;
+    text-align: center;
+    color: white;
+    font-family: "Norse-Bold";
+    font-size: 75px;
 }
