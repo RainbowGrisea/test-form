@@ -12,46 +12,63 @@
 
     <div class="main-container">
         <div class="left-panel">
-            <h1>Odin</h1>
+            <div class="main-title">
+                <img src="./images/odin-lined.png"></img>
+                <h1>Odin</h1>
+            </div>
             <footer>Photo by <a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski</a> on <a
                     href="https://unsplash.com/">Unsplash</a>
             </footer>
         </div>
+
         <div class="right-panel">
-            <div class="greeting-text-section">This is not a real online service! You know you need something like this
-                in your
-                life to help
-                you
-                realize your deepest dreams. Sign up <i>now</i> to get started.
-                <br>
-                You <i>know</i> you want to.
+
+            <div class="greeting-text-section">
+                This is not a real online service! You know you need something like this
+                in your life to help you realize your deepest dreams. <div>
+                    Sign up <i>now</i> to get started.
+                    <div class="distinct-line">You <i>know</i> you want to.</div>
+                </div>
             </div>
+
             <div class="form-section">
-                <form action="" method="get">
+                <span>Let's do this!</span>
+                <form action="index.html" method="get" id="service-form">
                     <div class="form-control-panel">
-                        <h1>Let's do this!</h1>
-                        <label for="fName">First name</label>
-                        <input type="text" name="fName" id="fName" value="">
-                        <label for="lName">Last name</label>
-                        <input type="text" name="lName" id="lName" value="">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" value="">
-                        <label for="phone">Phone number</label>
-                        <input type="tel" name="phone" id="phone" value="">
-                        <label for="pw">Password</label>
-                        <input type="password" name="pw" id="pw" value="">
-                        <label for="pwConf">Confirm password</label>
-                        <input type="password" name="pwConf" id="pwConf" value="">
+                        <div class="label-line">
+                            <label for="fName" class="required-label">First name</label>
+                            <label for="lName">Last name</label>
+                        </div>
+                        <div class="input-line">
+                            <input type="text" name="fName" id="fName" value="" required placeholder="John">
+                            <input type="text" name="lName" id="lName" value="" placeholder="Doe">
+                        </div>
+                        <div class="label-line">
+                            <label for="email" class="required-label">E-mail</label>
+                            <label for="phone">Phone number</label>
+                        </div>
+                        <div class="input-line">
+                            <input type="email" name="email" id="email" value="" required placeholder="mail@mail.mail">
+                            <input type="tel" name="phone" id="phone" value="">
+                        </div>
+                        <div class="label-line">
+                            <label for="pw" class="required-label">Password</label>
+                            <label for="pwConf" class="required-label">Confirm password</label>
+                        </div>
+                        <div class="input-line">
+                            <input type="password" min="8" name="pw" id="pw" value="" required>
+                            <input type="password" min="8" name="pwConf" id="pwConf" value="" required>
+                        </div>
                     </div>
+                </form>
             </div>
+
             <div class="button-section">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="service-form">Create Account</button>
                 <div>Already have an account? <a href="">Log in</a></div>
             </div>
-            </form>
         </div>
     </div>
-
 
 </body>
 
