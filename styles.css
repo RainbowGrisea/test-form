@@ -103,7 +103,7 @@ footer a {
 }
 
 .form-control-panel div:nth-child(2n+1) {
-    padding-top: 1.5rem;
+    padding-top: 1.75rem;
 }
 
 .form-control-panel div:nth-child(2n+0) {
@@ -126,21 +126,16 @@ footer a {
     color: rgb(160, 160, 160);
 }
 
-/* .input-line input:invalid:empty {
-    border: solid 2px rgb(210, 0, 0);
-}
-
-.input-line input:not([name="lName"]) {
-    background-color: rgba(66, 179, 72, 0.337);
-    border-color: rgb(66, 179, 71);
-} */
-
 .form-section .required-label::after {
     content: " *";
 }
 
+.form-section .form-control-panel input[name="fName"]::after {
+    content: "Lelller";
+}
+
 .form-section>span::after {
-    content: "* indicates a required field";
+    content: "* required field";
     font-size: 0.7rem;
     position: absolute;
     bottom: 0.3rem;
@@ -160,6 +155,16 @@ footer a {
 
 .form-section input:hover:not(:focus) {
     background-color: rgb(70, 70, 70);
+}
+
+.form-section .input-line input:not(:placeholder-shown):not(:focus) {
+    background-color: rgba(0, 226, 0, 0.289);
+    border-color: rgb(0, 191, 0);
+}
+
+.form-section .input-line input:invalid:not(:placeholder-shown):not(:focus) {
+    background-color: rgba(226, 0, 0, 0.289);
+    border-color: red;
 }
 
 .form-control-panel {

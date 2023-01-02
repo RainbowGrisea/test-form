@@ -40,24 +40,28 @@
                             <label for="lName">Last name</label>
                         </div>
                         <div class="input-line">
-                            <input type="text" name="fName" id="fName" value="" required placeholder="John">
-                            <input type="text" name="lName" id="lName" value="" placeholder="Doe">
+                            <input type="text" name="fName" id="fName" required placeholder="John">
+                            <input type="text" name="lName" id="lName" placeholder="Doe">
                         </div>
                         <div class="label-line">
                             <label for="email" class="required-label">E-mail</label>
                             <label for="phone">Phone number</label>
                         </div>
                         <div class="input-line">
-                            <input type="email" name="email" id="email" value="" required placeholder="mail@mail.mail">
-                            <input type="tel" name="phone" id="phone" value="">
+                            <input type="email" name="email" id="email" required placeholder="mail@mail.mail"
+                                title="Please enter a valid e-mail address">
+                            <input type="tel" name="phone" id="phone" placeholder=" "
+                                title="Please enter a valid phone number">
                         </div>
                         <div class="label-line">
                             <label for="pw" class="required-label">Password</label>
                             <label for="pwConf" class="required-label">Confirm password</label>
                         </div>
                         <div class="input-line">
-                            <input type="password" min="8" name="pw" id="pw" value="" required>
-                            <input type="password" min="8" name="pwConf" id="pwConf" value="" required>
+                            <input type="password" minlength="8" name="pw" id="pw" placeholder=" " required
+                                title="Please enter a password, minimum 8 characters long">
+                            <input type="password" minlength="8" name="pwConf" id="pwConf" placeholder=" " required
+                                title="Please repeat your password">
                         </div>
                     </div>
                 </form>
